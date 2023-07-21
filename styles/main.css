@@ -1988,19 +1988,51 @@ header .navbar-expand .navbar-brand i.version-number {
 .mid-slider-simple .card:not(.no-hover):hover {
     transform: initial;
 }
+.advantagesCard {
+    display: flex ;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    
+}
+@media (max-width:1000px) {
+    .advantagesCard {
+        flex-direction: column !important;
+    }
+    .advantages {
+        width: 80% !important;
+    }
+    .advantagesText {
+        width: 100% !important;
+    }
+}
+@media(max-width : 400px) {
+    #map {
+        height: 300px !important;
+        width: 90% !important;
+         margin: 0 auto;
+    }       
+}
+.advantagesCard:nth-child(even) {
+    flex-direction: row-reverse;
+}
 .advantages {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+   width: 35%;
 
 }
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .advantages img{
-    width: 22%;
+    width: 100%;
     min-width: 120px;
 }
-#advantages .container p {
-    text-align: center !important;
+#advantages .container .advantagesText {
+    width: 55%;
+    text-align: left !important;
+    
 }
 @media (max-width : 628px) {
     #advantages p {
@@ -3803,12 +3835,6 @@ footer .copyright a:not(.btn) {
     color: white !important;
    
 }
-.baloon {
-    background-color: black;
-}
-.baloon h3 {
-    font-size: 12px !important;
-}
 #services {
     padding-bottom: 20px !important;
 }
@@ -4517,3 +4543,38 @@ footer .copyright a:not(.btn) {
 }
 
 /* #endregion All Media Queries */
+.baloon img {
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+}
+@media (max-width : 600px) {
+    .baloon img {
+        height: 150px !important;
+    }
+}
+.baloon {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    /* min-width: 00px; */
+    /* width: 100%; */
+}
+.baloon h1 {
+    color : black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.ymaps-2-1-79-balloon,.ymaps-2-1-79-balloon__layout {
+    border-radius: 10px;
+    /* height: 200px; */
+    /* min-width: 250px; */
+    
+}
+
+.ymaps-2-1-79-balloon__content {
+    display: flex;
+    justify-content: center;
+}
