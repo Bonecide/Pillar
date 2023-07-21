@@ -760,3 +760,10 @@ jQuery(function ($) {
     sendForm('#leverage-simple-form');
     sendForm('#leverage-subscribe');
 })
+
+$(window).on('load', function() {
+    jQuery('#preloader').delay(500).fadeOut(500);
+    window.dispatchEvent(new Event('resize'));
+
+    grid_gallery();
+});

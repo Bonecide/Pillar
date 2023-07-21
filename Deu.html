@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="deu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!-- ==============================================
         Basic Page Needs
@@ -20,6 +20,7 @@
         =============================================== -->
         <link rel="shortcut icon" href="./img/favicon.png">
         <link rel="apple-touch-icon" href="./img/favicon.png">
+
         <!-- ==============================================
         Vendor Stylesheet
         =============================================== -->
@@ -40,7 +41,7 @@
         =============================================== -->
         <style>
             :root {
-                --header-bg-color: #251f37;
+                --header-bg-color: black;
                 --nav-item-color: #f5f5f5;
                 --top-nav-item-color: #f5f5f5;
                 --hero-bg-color: #160f29;
@@ -49,7 +50,7 @@
                 --section-2-bg-color: #160f29;
                 --section-3-bg-color: #1d1730;
 
-                --card-bg-color: #251f37;
+                --card-bg-color: #371F1F;
                 
                 --footer-bg-color: #251f37;
             }
@@ -58,7 +59,9 @@
     </head>
 
     <body class="home" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="100">
-
+        <div id="preloader" style=" background-size: cover;">
+            <div class="preloader1" style="top: 347px; background-size: cover;"></div>
+        </div>
         <!-- Header -->
         <header id="header">
 
@@ -81,24 +84,24 @@
                     <ul class="navbar-nav items">
                         
                         <li class="nav-item dropdown">
-                            <a href="#offer" class="nav-link smooth-anchor">Map</a>
+                            <a href="#offer" class="nav-link smooth-anchor">Карта</a>
                             
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="nav-link smooth-anchor">Gallery</a>
+                            <a href="#portfolio" class="nav-link smooth-anchor">Галерея</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#get" class="nav-link smooth-anchor">Services</a>
+                            <a href="#get" class="nav-link smooth-anchor">Услуги</a>
                         </li>
                          <li class="nav-item dropdown">
-                            <a class="nav-link ">Deutsch <i class="icon-arrow-down"></i></a>
+                            <a class="nav-link ">Русский <i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link"  href="./eng.html">English</a>
+                                    <a class="nav-link" href="./eng.html">English</a>
                                     
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="./index.html">Русский</a>
+                                    <a class="nav-link" href="./Deu.html">Deutsch</a>
                                     
                                 </li>
                             </ul>
@@ -139,6 +142,7 @@
 
             </div>
         </section>
+        
         <section id="offer" class="section-2 odd offers secondary featured custom" style="background-image: url(./img/backgrounds/Section1.png);">
                 <div class="container">
                     <h1 data-aos="zoom-out" data-aos-delay="400" class="miniTitle effect-static-text">Трехсторонние  тумбы (пилларсы) для наружней рекламы</h1>
@@ -168,7 +172,7 @@
                     <img src="./img/advantages/advantages8.png" alt="pilars" title="Пиларс"/>
                 </div>
                </div>
-                <div data-aos="zoom-out" data-aos-delay="200">
+                <div data-aos="zoom-out" data-aos-delay="400">
                     <p>- Стратегическое размещение: Мы выбираем самые привлекательные и оживленные места в городе, чтобы ваша реклама была видна как можно большему числу потенциальных клиентов.</p>
                     <div class="advantages">
                         <img src="./img/advantages/advantages9.png"alt='Pillars' title="Пиларс"/>
@@ -181,13 +185,42 @@
 
             </div>
          </section>
-
+         <section id="statistics" class="section-3 odd counter funfacts featured" style="background-image: url('./img/backgrounds/Section6.png');">
+            <div class="container">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 class="effect-static-text">Статистика</h2>
+                    </div>
+                </div>
+                <div data-aos-id="counter" data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items aos-init aos-animate">
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="13" class="radial"><canvas width="87" height="87" style="height: 70px; width: 70px;"></canvas>
+                            <span>13</span>
+                        </div>
+                        <h4>Количество Пилларсов</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="39" class="radial"><canvas width="87" height="87" style="height: 70px; width: 70px;"></canvas>
+                            <span>39</span>
+                        </div>
+                        <h4>Мест для рекламы</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div class="notRadial ">
+                            <canvas width="107" height="107" style="height: 70px; width: 107px;"></canvas>
+                            <span>24/7</span>
+                        </div>
+                        <h4>Круглосуточно</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio -->
         <section id="portfolio" class="section-2 odd  secondary featured custom" style="background-image: url(./img/backgrounds/Section3.png);">
             <div class="container">
                 <div class="row text-center intro">
                     <div class="col-12">
-                        <h2 class="miniTitle effect-static-text">ФотоGallery</h2>
+                        <h2 class="miniTitle effect-static-text">Фотогалерея</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center text-center items">
@@ -267,13 +300,13 @@
                 <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 
                     <!-- Item 1 -->
-                    <div class="swiper-slide slide-center swiper-slide-active" >
+                    <div class="swiper-slide slide-center swiper-slide-active">
                         <img data-aos="zoom-out-up" data-aos-delay="800" src="./featured-8.png" class="hero-image-left aos-init" alt="Hero Image">
 
                         <div class="slide-content row" data-mask-768="70">
                             <div class="col-12 d-flex justify-content-end inner">
                                 <div class="right text-center text-md-left init adaptiveText">
-                                    <h2 data-aos="zoom-out-up" data-aos-delay="200" class="title effect-static-text aos-init">Services</h2>
+                                    <h2 data-aos="zoom-out-up" data-aos-delay="200" class="title effect-static-text aos-init">Наши услуги</h2>
                                     
                                     <div data-aos="zoom-out-up" data-aos-delay="400">
                                         <h5 >Размещение рекламы</h5>
@@ -340,13 +373,13 @@
                                     <h4 class="title">Навигация</h4>
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#offer" class="nav-link">Map</a>
+                                            <a href="#offer" class="nav-link">Карта</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a  href="#portfolio" class="nav-link">Gallery</a>
+                                            <a  href="#portfolio" class="nav-link">Галерея</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#get"  class="nav-link">Services</a>
+                                            <a href="#get"  class="nav-link">Услуги</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -384,13 +417,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                            <p>Enjoy the low price. We are tracking any intention of piracy.</p>
-                            <!--
-                                Suggestion: Replace the text above with a description of your website.
-                             -->
+                            
                         </div>
                         <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© 2023 Leverage is Proudly Powered by <a href="https://codings.dev/" target="_blank">Codings</a>.</p>
+                            <p>Все права защищены © 2023 .</p>
                         </div>
                     </div>
                     
@@ -406,7 +436,7 @@
             <div class="modal-dialog modal-dialog-slideout" role="document">
                 <div class="modal-content full">
                     <div class="modal-header" data-dismiss="modal">
-                        Menu <i class="icon-close"></i>
+                        Меню <i class="icon-close"></i>
                     </div>
                     <div class="menu modal-body">
                         <div class="row w-100">
@@ -549,7 +579,7 @@
                 var place2 = new ymaps.Placemark([42.822027, 74.617106], { 
                                    });
                 myMap.geoObjects.add(place1);
-    myMap.geoObjects.add(place2);
-            }
+                  myMap.geoObjects.add(place2);
+                }
         </script>
     
