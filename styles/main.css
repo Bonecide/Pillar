@@ -2009,10 +2009,15 @@ header .navbar-expand .navbar-brand i.version-number {
         width: 100% !important;
     }
 }
+@media (max-width : 600px) {
+    .advantages {
+        width: 100% !important;
+    }
+}
 @media(max-width : 400px) {
     #map {
         height: 300px !important;
-        width: 90% !important;
+        width: 100% !important;
          margin: 0 auto;
     }       
 }
@@ -2026,7 +2031,12 @@ header .navbar-expand .navbar-brand i.version-number {
 .footer-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+@media(max-width : 600px) {
+    .footer-item {
+        align-items: center !important;
+    }
 }
 .advantages img{
     width: 100%;
@@ -3056,6 +3066,11 @@ header .navbar-expand .navbar-brand i.version-number {
     width: 20% !important;
     min-width: 450px !important;
 }
+@media (max-width : 1300px) {
+    .hero-image-left {
+        min-width : 350px !important;
+    }
+}
 
 
 .fit-image {
@@ -3854,6 +3869,15 @@ footer .copyright a:not(.btn) {
     text-align: center !important;
     margin-top: 20px;
 }
+@media (max-width : 600px) {
+    #offer .container h2 {
+        font-size: 20px !important;
+    }
+    #offer .container p {
+        font-size: 18px !important;
+        /* text-align: ; */
+    }
+}
 #offer .container p {
     font-weight: 600;
     font-size: 20px;
@@ -3877,6 +3901,11 @@ footer .copyright a:not(.btn) {
     .miniTitle {
         font-size: 35px;
     }
+    @media (max-width:600px) {
+        .miniTitle {
+            font-size: 25px !important;
+        }
+    } 
 .modal-header {
     align-items: center;
     padding: 25px;
@@ -4130,7 +4159,7 @@ footer .copyright a:not(.btn) {
     /* #region Section */
 
     body .container {
-        padding: 0 10px;
+        padding: 0 30px;
         max-width: 100%;
     }
    
