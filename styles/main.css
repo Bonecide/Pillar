@@ -1996,6 +1996,9 @@ header .navbar-expand .navbar-brand i.version-number {
     
 }
 @media (max-width:1000px) {
+    #slider {
+        background-size: cover !important;
+    }
     .advantagesCard {
         flex-direction: column !important;
     }
